@@ -63,7 +63,7 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 ### Continued development
 
-# I would liek to focus more on grids and flexbox for laying out contents
+# I would like to focus more on grids and flexbox for laying out contents
 
 ### Useful resources
 
