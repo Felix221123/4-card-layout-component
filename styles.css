@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root{
+    --red-border-color:hsl(0, 78%, 62%);
+    --cyan-border-color:hsl(180, 62%, 55%);
+    --orange-border-color:hsl(34, 97%, 64%);
+    --blue-border-color:hsl(212, 86%, 64%);
+
+    --h1-h2-card-headings:hsl(234, 12%, 34%);
+    --paragrapgh-color:hsl(229, 6%, 66%);
+    --main-body-background-color:hsl(0, 0%, 98%);
+    
+    --font-style:'Poppins', sans-serif;
+    --fw-extralight:200;
+    --fw-regular:400;
+    --fw-bold:600;
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*{
+    font: inherit;
+}
+
+body{
+    background-color: var(--main-body-background-color);
+    text-align: center;
+}
+
+h1{
+    margin-top: 1.5rem;
+    font-size: 2.2rem;
+    font-family: var(--font-style);
+    font-weight: var(--fw-extralight);
+    color: var(--h1-h2-card-headings);
+}
+
+h2{
+    font-size: 2.2rem;
+    font-weight: var(--fw-bold);
+    font-family: var(--font-style);
+    color: var(--h1-h2-card-headings);
+}
+
+.headings-paragraph{
+    font-size: 0.9rem;
+    width: 30vw;
+    margin: 1rem auto;
+    font-family: var(--font-style);
+    color: var(--paragrapgh-color);   
+}
+
+.three-grid-column-layout-cards{
+    display: grid;
+    grid-template-columns: repeat(3 , 22rem);
+    column-gap: 1.5rem;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
+    /* background-color: red; */
+    justify-content: center;
+    place-items: center;
+
+}
+
+.card-layout{
+    width: 22rem;
+    height: 15rem;
+    /* background-color: grey; */
+    border-radius: 0.5rem;
+    box-shadow:0px 15px 25px rgba(28, 63, 83, 0.2) ;
+}
+
+.supervisor{
+    border-top:0.3rem solid var(--cyan-border-color);
+    /* margin-right:2rem; */
+}
+
+.card-headings-h3-para{
+    text-align: left;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+h3{
+    font-size: 1.2rem;
+    font-family: var(--font-style);
+    font-weight: var(--fw-bold);
+    margin-bottom: 0.5rem;
+    color: var(--h1-h2-card-headings);
+}
+
+.paragraph-content-in-card{
+    width: 85%;
+    color: var(--paragrapgh-color);
+    font-family: var(--font-style);
+    font-weight: var(--fw-regular);
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+}
+
+.card-img{
+    position: relative;
+    left: 7rem;
+    top:2.5rem;
+
+}
+
+.two-flex-row-cards{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap:1.5rem ;
+
+}
+
+.team-builder{
+    border-top:0.3rem solid var(--red-border-color);
+}
+
+.karma{
+    border-top: 0.3rem solid var(--orange-border-color);
+}
+
+.calcultor{
+    border-top: 0.3rem solid var(--blue-border-color);
+}
+
+footer p.attribution {
+    margin: 2rem auto;
+    text-align: center;
+    color: var(--h1-h2-card-headings);
+    font-family: var(--font-style);
+    font-weight: var(--fw-bold);
+}
+
+footer p.attribution a{
+    text-decoration: none;
+    color: var(--h1-h2-card-headings);
+}
+
+
+
+
+
+@media only screen and (max-width:420px) {
+    body{
+        text-align: center;
+
+    }
+    h1{
+        font-size: 1.7em;
+    }
+    h2{
+        font-size: 1.7em;
+    }
+    .headings-paragraph{
+        width: 90%;
+    }
+    .three-grid-column-layout-cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0rem;
+        row-gap: 1.5em;
+    }
+    footer p.attribution{
+        margin: 2em auto;
+    }
+      
+}
+
+/* for small heighted devices */
+@media only screen and (max-height:420px){
+    body{
+        max-height: 130vh;
+    }
+    footer p.attribution{
+        margin: 2em auto;
+    }
+}
+
+
+@media (min-width:420px) and (max-width:1200px) {
+    body{
+        text-align: center;
+
+    }
+    h1{
+        font-size: 1.7em;
+    }
+    h2{
+        font-size: 1.7em;
+    }
+    .headings-paragraph{
+        width: calc(800px / 2);
+    }
+    .three-grid-column-layout-cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0rem;
+        row-gap: 1.5em;
+    }
+    footer p.attribution{
+        margin: 2em auto;
+    }
+    
+    
+}
