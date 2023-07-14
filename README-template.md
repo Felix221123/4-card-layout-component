@@ -55,7 +55,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-# I leant the use gap spacing and my knowledge about layouts too increased a bit more : )
+# I learnt the use gap spacing and my knowledge about layouts too increased a bit more : )
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
